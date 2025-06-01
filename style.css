@@ -1,0 +1,158 @@
+/* Umum */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4fdf4;
+  color: #333;
+}
+
+header {
+  background-color: #064420; /* hijau tua */
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+
+.logo-top {
+  width: 120px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.logo-bottom {
+  width: 100%;
+  max-height: 80px;
+  object-fit: contain;
+  margin-top: 20px;
+}
+
+/* Navigasi */
+nav {
+  margin-top: 20px;
+  background-color: #0b6623;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  display: block;
+  padding: 15px 25px;
+  text-decoration: none;
+  color: white;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #0d8c3e;
+  transform: scale(1.05);
+  border-bottom: 3px solid yellow;
+}
+
+/* Marquee */
+.marquee-container {
+  overflow: hidden;
+  background-color: #b6f2b6;
+  padding: 10px 0;
+}
+
+.marquee-text {
+  display: inline-block;
+  animation: marquee 15s linear infinite;
+  font-weight: bold;
+  color: #064420;
+  background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 1rem;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+/* Konten */
+.section {
+  padding: 30px;
+  background-color: #eaf8ec;
+}
+
+.section h3 {
+  color: #064420;
+  margin-bottom: 15px;
+}
+
+/* Guru Card */
+.guru-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.guru-card {
+  background-color: #ffffff;
+  border: 2px solid #b4deb3;
+  border-radius: 10px;
+  padding: 15px;
+  width: 220px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  box-shadow: 2px 4px 10px rgba(0,0,0,0.1);
+}
+
+.guru-card:hover {
+  transform: scale(1.05);
+  border-color: #0b6623;
+}
+
+.guru-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* WhatsApp box */
+.wa-box a {
+  display: inline-block;
+  background-color: #25D366;
+  color: white;
+  padding: 8px 12px;
+  margin-top: 8px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  animation: pulse 2s infinite;
+}
+
+.wa-box a:hover {
+  background-color: #128c7e;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.4); }
+  70% { box-shadow: 0 0 0 10px rgba(37, 211, 102, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+
+/* Footer */
+footer {
+  background-color: #064420;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
