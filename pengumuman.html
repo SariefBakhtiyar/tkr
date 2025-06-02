@@ -4,6 +4,39 @@
   <meta charset="UTF-8">
   <title>Pengumuman</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .pengumuman-container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      gap: 20px;
+    }
+
+    .pengumuman-box {
+      flex: 1;
+      background-color: #fffbe6;
+      border-left: 5px solid #ffc107;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .pengumuman-box h4 {
+      color: #c70039;
+      margin-top: 0;
+    }
+
+    .pengumuman-img {
+      flex: 1;
+      max-width: 400px;
+    }
+
+    .pengumuman-img img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+  </style>
 </head>
 <body>
 
@@ -29,25 +62,31 @@
 
   <section class="section">
     <h3>Pengumuman Terbaru</h3>
-    <div class="pengumuman-box">
-      <h4>🌟 MALIGO - Servis Bersama Daihatsu 🌟</h4>
-      <p>SMK Ma’arif 5 Gombong bekerja sama dengan ARMADA Mobil Daihatsu menghadirkan:</p>
-      <ul>
-        <li>🚗 <strong>Tune Up + Ganti Oli</strong></li>
-        <li>💰 Hanya <strong>350 Ribu</strong> rupiah</li>
-        <li>📌 Berlaku untuk semua merk mobil bensin</li>
-        <li>🗓 <strong>Order:</strong> Rabu 28 Mei – Senin 16 Juni 2025</li>
-        <li>🛠 <strong>Pengerjaan:</strong> Rabu 18 Juni 2025</li>
-        <li>📍 <strong>Lokasi:</strong> Bengkel TKR SMK Ma’arif 5 Gombong</li>
-      </ul>
-      <p><strong>📲 Daftar via WhatsApp:</strong> <a href="https://wa.me/6288239528152?text=servisdaihatsu" target="_blank">Klik di sini</a></p>
-      <p><strong>Contact Person:</strong></p>
-      <ul>
-        <li>Sarief: 0877-3777-6767</li>
-        <li>Arif: 0812-7283-8783</li>
-        <li>Ilyas: 0877-1541-8933</li>
-        <li>Gendro: 0857-9166-3079</li>
-      </ul>
+    <div class="pengumuman-container">
+      <div class="pengumuman-box">
+        <h4>🌟 MALIGO - Servis Bersama Daihatsu 🌟</h4>
+        <p>SMK Ma’arif 5 Gombong bekerja sama dengan ARMADA Mobil Daihatsu menghadirkan:</p>
+        <ul>
+          <li>🚗 <strong>Tune Up + Ganti Oli</strong></li>
+          <li>💰 Hanya <strong>350 Ribu</strong> rupiah</li>
+          <li>📌 Berlaku untuk semua merk mobil bensin</li>
+          <li>🗓 <strong>Order:</strong> Rabu 28 Mei – Senin 16 Juni 2025</li>
+          <li>🛠 <strong>Pengerjaan:</strong> Rabu 18 Juni 2025</li>
+          <li>📍 <strong>Lokasi:</strong> Bengkel TKR SMK Ma’arif 5 Gombong</li>
+        </ul>
+        <p><strong>📲 Daftar via WhatsApp:</strong> <a href="https://wa.me/6288239528152?text=servisdaihatsu" target="_blank">Klik di sini</a></p>
+        <p><strong>Contact Person:</strong></p>
+        <ul>
+          <li>Sarief: 0877-3777-6767</li>
+          <li>Arif: 0812-7283-8783</li>
+          <li>Ilyas: 0877-1541-8933</li>
+          <li>Gendro: 0857-9166-3079</li>
+        </ul>
+      </div>
+
+      <div class="pengumuman-img">
+        <img src="logo4.jpg" alt="Poster Maligo Daihatsu">
+      </div>
     </div>
   </section>
 
